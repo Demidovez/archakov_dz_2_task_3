@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+# ДЗ №2 курса по реакту от Archakov D.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Задание №3 (сложное)
 
-## Available Scripts
+Если ты разобрался с этими двумя заданиями, сделать третье задание для тебя не будет сложным.
+Вот вёрстка и стили из урока №2: [https://trycode.pw/c/87184](https://trycode.pw/c/87184)
+Теперь вместо того, чтобы использовать JSON Placeholder, пользуйся этой ссылкой:
+[https://5c3755177820ff0014d92711.mockapi.io/users?page=1&limit=10](https://5c3755177820ff0014d92711.mockapi.io/users?page=1&limit=10)
+Тут я сгенерировал для тебя 50 случайных пользователей.
+Для того, чтобы получить следующих 10 пользователей с сервера, увеличивай параметр **page** на +1 по ссылке выше
 
-In the project directory, you can run:
+**Задача:**
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Получи первых **10** пользователей и выводи их, примерно, как в списке выше.
+2. Вместо "**Add user**", напиши "**Next 10 users**" и при клике по этой кнопке, **запрашивай с сервера** **ещё 10 пользователей** и добавь в массив пользователей ещё 10 юзеров.
+3. Когда сервер вернёт пустой массив, скрой кнопку "**Next 10 users**" и при этом, не стирай список пользователей.
+4. Реализуй отображение статуса загрузки, когда идёт запрос данных. Например, выводи "**Loading...**", вместо пустой области.
+5. При клике по кнопке "Next 10 users", меняй текст у кнопки на "Wait..." и запрещай делать клик по кнопке.
